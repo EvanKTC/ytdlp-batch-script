@@ -11,7 +11,7 @@ if %format% == 1 goto mp3
 if %format% == 2 goto video
 
 :mp3
-yt-dlp -i -o "%%(title)s.%%(ext)s" -x --audio-format --download-archive mp3 %url%
+yt-dlp -i -o "%%(title)s.%%(ext)s" -x --audio-format mp3 --download-archive %url%
 goto menu2
 
 :video
